@@ -11,8 +11,14 @@ class DetailPage extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
-          onPressed: () {}, 
-          child: Text('Voltar para Home')
+         onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => DetailPage(),
+              )
+          );
+                      }, 
+          child: Text('Voltar para home'),
           ),
       ),
     );
